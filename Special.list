@@ -15,3 +15,6 @@ DOMAIN-SUFFIX, bannedbook.org, Special
 DOMAIN-SUFFIX, chinesepen.org, Special
 DOMAIN-SUFFIX, fdc64.jp, Special
 DOMAIN-SUFFIX, delta.winnie.cloud, Special
+
+#Podcast
+DOMAIN-SUFFIX, buzzsprout.com
