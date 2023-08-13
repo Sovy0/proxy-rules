@@ -1,20 +1,20 @@
 #Special
 
-DOMAIN-KEYWORD, chinadigitaltimes, Special
-DOMAIN-KEYWORD, aboluowang, Special
+DOMAIN-KEYWORD, chinadigitaltimes
+DOMAIN-KEYWORD, aboluowang
 
-DOMAIN-SUFFIX, myduty.net, Special
-DOMAIN-SUFFIX, pincong.rocks, Special
-DOMAIN-SUFFIX, nytimes.com, Special
-DOMAIN-SUFFIX, voanews.com, Special
-DOMAIN-SUFFIX, voachinese.com, Special
-DOMAIN-SUFFIX, rfi.fr, Special
-DOMAIN-SUFFIX, rfa.org, Special
-DOMAIN-SUFFIX, epochtimes.com, Special
-DOMAIN-SUFFIX, bannedbook.org, Special
-DOMAIN-SUFFIX, chinesepen.org, Special
-DOMAIN-SUFFIX, fdc64.jp, Special
-DOMAIN-SUFFIX, delta.winnie.cloud, Special
+DOMAIN-SUFFIX, myduty.net
+DOMAIN-SUFFIX, pincong.rocks
+DOMAIN-SUFFIX, nytimes.com
+DOMAIN-SUFFIX, voanews.com
+DOMAIN-SUFFIX, voachinese.com
+DOMAIN-SUFFIX, rfi.fr
+DOMAIN-SUFFIX, rfa.org
+DOMAIN-SUFFIX, epochtimes.com
+DOMAIN-SUFFIX, bannedbook.org
+DOMAIN-SUFFIX, chinesepen.org
+DOMAIN-SUFFIX, fdc64.jp
+DOMAIN-SUFFIX, delta.winnie.cloud
 
 #Podcast
 DOMAIN-SUFFIX, buzzsprout.com
