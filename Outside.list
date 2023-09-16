@@ -1,6 +1,10 @@
-#Outside
+# Outside
 
-#Podcast
+# Podcast
 DOMAIN-SUFFIX, firstory.me
 DOMAIN-SUFFIX, soundon.fm
 DOMAIN-SUFFIX, podcast.rthk.hk
+
+# Download
+PROCESS-NAME,aria2c.exe
+DOMAIN-KEYWORD,aria2
