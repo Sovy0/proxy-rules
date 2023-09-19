@@ -3,5 +3,5 @@
 # video
 DOMAIN-SUFFIX, bz800hqw.com
 
-# LocalSend
-IP-CIDR, 198.19.0.0/16, no-resolve
+# 彩云天气
+caiyuncdn.com
