@@ -1,0 +1,5 @@
+# Block local DNS queries
+
+GEOIP, CN, 国内媒体
+
+host-keyword, ., 漏网之鱼
