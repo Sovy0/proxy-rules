@@ -5,6 +5,7 @@ DOMAIN-SUFFIX, firstory.me
 DOMAIN-SUFFIX, soundon.fm
 DOMAIN-SUFFIX, podcast.rthk.hk
 
-# Download
-#PROCESS-NAME,aria2c.exe
-#DOMAIN-KEYWORD,aria2
+# buliang0
+# https://cf.buliang0.cf/clash-rules/nodnsleak.ini
+DOMAIN-SUFFIX, xn--ngstr-lra8j.com
+DOMAIN-SUFFIX, services.googleapis.cn
