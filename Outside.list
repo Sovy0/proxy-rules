@@ -3,9 +3,11 @@
 # Podcast
 DOMAIN-SUFFIX, firstory.me
 DOMAIN-SUFFIX, soundon.fm
-DOMAIN-SUFFIX, podcast.rthk.hk
+# 与 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list 重复
+#DOMAIN-SUFFIX, podcast.rthk.hk
 
 # buliang0
-# https://cf.buliang0.cf/clash-rules/nodnsleak.ini
-DOMAIN-SUFFIX, xn--ngstr-lra8j.com
-DOMAIN-SUFFIX, services.googleapis.cn
+# From https://cf.buliang0.cf/clash-rules/nodnsleak.ini
+# 与 https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list 重复
+#DOMAIN-SUFFIX, xn--ngstr-lra8j.com
+#DOMAIN-SUFFIX, services.googleapis.cn
