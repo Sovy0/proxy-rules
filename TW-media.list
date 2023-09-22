@@ -1,3 +1,9 @@
-#TW-media
+# TW-media
 
+# Giloo
 DOMAIN-KEYWORD, giloo
+# Giloo 检测地区
+#DOMAIN-SUFFIX, ipapi.co
+
+# Dcard
+DOMAIN-SUFFIX, dcard.tw
