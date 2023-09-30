@@ -15,3 +15,11 @@ DOMAIN-SUFFIX, yupi.icu
 # 美的美居
 DOMAIN-SUFFIX, smartmidea.net
 DOMAIN-SUFFIX, midea.com
+
+# Podcast
+DOMAIN-SUFFIX, xyzfm.space
+DOMAIN-SUFFIX, justpodmedia.com
+DOMAIN-SUFFIX, openlanguage.com
+
+# 未知
+#push-rest.zui.com
