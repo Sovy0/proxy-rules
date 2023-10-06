@@ -20,6 +20,9 @@ DOMAIN-SUFFIX, midea.com
 DOMAIN-SUFFIX, songzhaopian.com
 DOMAIN-SUFFIX, yinge.cc
 
+# 系统库
+DOMAIN-SUFFIX, xitongku.com
+
 # Podcast
 DOMAIN-SUFFIX, xyzfm.space
 DOMAIN-SUFFIX, justpodmedia.com
