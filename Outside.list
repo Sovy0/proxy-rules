@@ -12,3 +12,8 @@ DOMAIN-SUFFIX, soundon.fm
 # 与 ProxyGFWlist 重复
 #DOMAIN-SUFFIX, xn--ngstr-lra8j.com
 #DOMAIN-SUFFIX, services.googleapis.cn
+
+# ipv6 test
+DOMAIN-KEYWORD, test-ipv6
+
+DOMAIN-SUFFIX, zxinc.org
