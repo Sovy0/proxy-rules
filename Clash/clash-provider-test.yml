@@ -1,0 +1,54 @@
+port: 7890
+socks-port: 7891
+# mixed-port: 7892
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+
+
+proxy-providers:
+  paooo:
+    type: http
+    url: "https://xxxxx"
+    interval: 3600
+    path: ./paooo.yaml
+    health-check:
+      enable: true
+      interval: 600
+      # lazy: true
+      url: http://www.gstatic.com/generate_204
+ 
+ 
+rule-providers:
+  FCM:   
+    type: http        # type of the provider, it can be a HTTP or a File
+    behavior: classical    # the type of rules
+    path: ./FCM.yaml         # where is the file, ./ relative to clash home
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list         # only available when type is HTTP, where to download a file. You don't need to create a new file in local space.
+    interval: 3600    # auto-update interval,only available when type is HTTP
+    format: text  # or text, text mode is designed to significantly improve the matching performance of rules 
+
+
+rules:
+  - DOMAIN-SUFFIX,google.com,🚀 节点选择
+  - RULE-SET,FCM,FCM分组,no-resolve
+  
+  
+proxy-groups:
+  - name: 🚀 节点选择
+    type: select
+    use:
+      - paooo
+    proxies:
+      - REJECT
+      - DIRECT
+      
+  - name: FCM分组
+    type: select
+    use:
+      - paooo
+    proxies:
+      - 🚀 节点选择
+      
+  
