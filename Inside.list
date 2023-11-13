@@ -31,5 +31,7 @@ DOMAIN-SUFFIX, xyzfm.space
 DOMAIN-SUFFIX, justpodmedia.com
 DOMAIN-SUFFIX, openlanguage.com
 
+# FinalShell
+IP-CIDR, 5.5.5.5, no-resolve
 # 未知
 #push-rest.zui.com
