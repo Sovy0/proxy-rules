@@ -32,6 +32,6 @@ DOMAIN-SUFFIX, justpodmedia.com
 DOMAIN-SUFFIX, openlanguage.com
 
 # FinalShell
-IP-CIDR, 5.5.5.5, no-resolve
+IP-CIDR, 5.5.5.5/32, no-resolve
 # 未知
 #push-rest.zui.com
