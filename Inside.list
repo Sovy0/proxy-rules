@@ -33,5 +33,11 @@ DOMAIN-SUFFIX, openlanguage.com
 
 # FinalShell
 IP-CIDR, 5.5.5.5/32, no-resolve
+
+# TJUPT
+DOMAIN-SUFFIX, tjupt.org
+DOMAIN-SUFFIX, tju.pt
+DOMAIN-KEYWORD, tju
+
 # 未知
 #push-rest.zui.com
