@@ -29,19 +29,19 @@ authentication:         # http,socks入口的验证用户名，密码
 skip-auth-prefixes:     # 设置跳过验证的IP段
   - 127.0.0.1/8
   - ::1/128
+  - 192.168.0.1/16
 
 unified-delay: false    # 统一延迟，更换延迟计算方式，去除握手等额外延迟
 tcp-concurrent: true    #【Meta专属】TCP 并发连接所有 IP, 将使用最快握手的 TCP
 #keep-alive-interval: 15                 #  TCP keep alive interval
-external-controller: 127.0.0.1:54233     # 外部控制器监听地址，可以使用 RESTful API 来控制你的 clash 内核
 
+external-controller: 127.0.0.1:54233     # 外部控制器监听地址，可以使用 RESTful API 来控制你的 clash 内核
 #external-ui: ui
 #external-ui-url: "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip"
 
 find-process-mode: strict   # 匹配所有进程（always/strict/off）
 global-client-fingerprint: chrome   # 全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
                                     # 可选： "chrome","firefox","safari","ios","random","none" options.
-
 profile:
   store-selected: true      # 存储 select 选择记录
   store-fake-ip: true       # 持久化 fake-ip
@@ -98,10 +98,12 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-    - 192.198.10.1
-    - 114.114.114
+    - 223.5.5.5
+    - 119.29.29.29
     - 8.8.8.8
     - 1.1.1.1
+    - 192.168.10.1
+    - 114.114.114.114
 #  proxy-server-nameserver:                  # 专用于节点域名解析的 DNS 服务器，非必要配置项
 #    - https://doh.pub/dns-query             # 配置服务器若查询失败将使用 nameserver，非并发查询
 #  nameserver-policy:                        # 指定域名查询的解析服务器

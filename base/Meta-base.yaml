@@ -10,6 +10,7 @@ authentication:         # http,socks入口的验证用户名，密码
 skip-auth-prefixes:     # 设置跳过验证的IP段
   - 127.0.0.1/8
   - ::1/128
+  - 192.168.0.1/16
 
 unified-delay: false    # 统一延迟，更换延迟计算方式，去除握手等额外延迟
 tcp-concurrent: true    #【Meta专属】TCP 并发连接所有 IP, 将使用最快握手的 TCP
@@ -78,10 +79,12 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-    - 192.198.10.1
-    - 114.114.114
+    - 223.5.5.5
+    - 119.29.29.29
     - 8.8.8.8
     - 1.1.1.1
+    - 192.168.10.1
+    - 114.114.114.114
 #  proxy-server-nameserver:                  # 专用于节点域名解析的 DNS 服务器，非必要配置项
 #    - https://doh.pub/dns-query             # 配置服务器若查询失败将使用 nameserver，非并发查询
 #  nameserver-policy:                        # 指定域名查询的解析服务器
