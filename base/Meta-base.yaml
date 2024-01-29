@@ -74,17 +74,19 @@ dns:
   default-nameserver:           # 用于解析 nameserver，fallback 以及其他DNS服务器配置的，DNS 服务域名
     - 223.5.5.5                 # 只能使用纯 IP 地址，可使用加密 DNS
     - 119.29.29.29
-    - 8.8.8.8
-    - 1.1.1.1
+    - 192.168.10.1
+#    - 8.8.8.8
+#    - 1.1.1.1
+#    - 114.114.114.114
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-    - 223.5.5.5
-    - 119.29.29.29
-    - 8.8.8.8
-    - 1.1.1.1
-    - 192.168.10.1
-    - 114.114.114.114
+#    - 223.5.5.5
+#    - 119.29.29.29
+#    - 8.8.8.8
+#    - 1.1.1.1
+#    - 192.168.10.1
+#    - 114.114.114.114
 #  proxy-server-nameserver:                  # 专用于节点域名解析的 DNS 服务器，非必要配置项
 #    - https://doh.pub/dns-query             # 配置服务器若查询失败将使用 nameserver，非并发查询
 #  nameserver-policy:                        # 指定域名查询的解析服务器
