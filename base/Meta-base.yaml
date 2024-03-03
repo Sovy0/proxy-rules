@@ -14,7 +14,10 @@ skip-auth-prefixes:     # 设置跳过验证的IP段
 
 unified-delay: false    # 统一延迟，更换延迟计算方式，去除握手等额外延迟
 tcp-concurrent: true    #【Meta专属】TCP 并发连接所有 IP, 将使用最快握手的 TCP
-#keep-alive-interval: 15                 #  TCP keep alive interval
+
+keep-alive-interval: 300   #默认15s      # TCP keep alive interval
+clash-for-android:
+  append-system-dns: false
 
 external-controller: 127.0.0.1:54233     # 外部控制器监听地址，可以使用 RESTful API 来控制你的 clash 内核
 #external-ui: ui
@@ -79,8 +82,8 @@ dns:
 #    - 1.1.1.1
 #    - 114.114.114.114
   nameserver:
-    - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+    - https://doh.pub/dns-query
 #    - 223.5.5.5
 #    - 119.29.29.29
 #    - 8.8.8.8
@@ -97,4 +100,3 @@ dns:
 #    "rule-set:geolocation-!cn":
 #      - "https://dns.cloudflare.com/dns-query#dns"
 #      - "https://dns.google/dns-query#dns"
-      
