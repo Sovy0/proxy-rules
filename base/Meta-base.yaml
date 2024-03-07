@@ -15,7 +15,7 @@ skip-auth-prefixes:     # 设置跳过验证的IP段
 unified-delay: false    # 统一延迟，更换延迟计算方式，去除握手等额外延迟
 tcp-concurrent: true    #【Meta专属】TCP 并发连接所有 IP, 将使用最快握手的 TCP
 
-keep-alive-interval: 300   #默认15s      # TCP keep alive interval
+keep-alive-interval: 300    # 默认15s    # TCP keep alive interval
 clash-for-android:
   append-system-dns: false
 
@@ -64,7 +64,7 @@ tun:
 dns:
   enable: true
   prefer-h3: true               # 是否开启 DOH 的 http/3
-  use-hosts: false              # 是否查询系统 hosts
+  use-hosts: true               # 是否查询系统 hosts
   listen: 0.0.0.0:53            # DNS 监听地址
   ipv6: true                    # IPV6解析开关；如果为false，将返回ipv6结果为空
   enhanced-mode: fake-ip
