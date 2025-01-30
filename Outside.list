@@ -16,4 +16,7 @@ DOMAIN-SUFFIX, soundon.fm
 # ipv6 test
 DOMAIN-KEYWORD, test-ipv6
 
+# DeepSeek
+DOMAIN-KEYWORD, deepseek
+
 DOMAIN-SUFFIX, zxinc.org
