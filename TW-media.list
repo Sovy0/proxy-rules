@@ -8,5 +8,8 @@ DOMAIN-KEYWORD, giloo
 # Dcard
 DOMAIN-SUFFIX, dcard.tw
 
-#KKBOX
+# KKBOX
 DOMAIN-KEYWORD, kkbox
+
+# 公視+
+DOMAIN-KEYWORD, ptsplus
