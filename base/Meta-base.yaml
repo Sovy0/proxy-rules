@@ -87,7 +87,7 @@ sniffer:                    # 嗅探域名 可选配置
   parse-pure-ip: true
   # 是否使用嗅探结果作为实际访问，默认 true
   # 全局配置，优先级低于 sniffer.sniff 实际配置
-  override-destination: false
+  # override-destination: false
   sniff:
     HTTP:
       ports: [80, 8080-8880]
@@ -124,9 +124,9 @@ dns:
   enable: true
   cache-algorithm: arc
   prefer-h3: false               # 是否开启 DOH 的 http/3
-  use-hosts: true               # 是否查询系统 hosts
+  use-hosts: true                # 是否查询系统 hosts
   use-system-hosts: true
-  listen: 0.0.0.0:1053            # DNS 监听地址
+  listen: 0.0.0.0:53             # DNS 监听地址（回环，避免对外暴露）
   ipv6: false                    # IPV6解析开关；如果为false，将返回ipv6结果为空
 #  ipv6-timeout: 300 # 单位：ms，内部双栈并发时，向上游查询 AAAA 时，等待 AAAA 的时间，默认 100ms
   enhanced-mode: fake-ip
@@ -181,13 +181,13 @@ dns:
     - https://doh.pub/dns-query
     - 223.5.5.5
     - 119.29.29.29
-  nameserver-policy:                        # 指定域名查询的解析服务器
-    "geosite:cn":
-        - https://dns.alidns.com/dns-query
-        - https://doh.pub/dns-query
-    "geosite:private":
-        - 223.5.5.5
-        - 119.29.29.29
+  # nameserver-policy:                        # 指定域名查询的解析服务器
+  #   "geosite:cn":
+  #       - https://dns.alidns.com/dns-query
+  #       - https://doh.pub/dns-query
+  #   "geosite:private":
+  #       - 223.5.5.5
+  #       - 119.29.29.29
 #    'www.baidu.com': '114.114.114.114'
 #    "rule-set:private":
 #      - https://doh.pub/dns-query
